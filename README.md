@@ -12,3 +12,5 @@
 [calculator.c](https://github.com/rahuldasari4/19ecb132/blob/main/calculator.c)
 
 [palindrome.c](https://github.com/rahuldasari4/19ecb132/blob/main/palindrome.c)
+
+[pattern.c](https://github.com/rahuldasari4/19ecb132/blob/main/pattern.c)
