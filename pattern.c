@@ -19,7 +19,6 @@ main()
     }
 
 
-    // printf("\n\n");
     for (k = rows-2; k >= 0; k--)
     {
         for (n = 1; n <=rows-k-1; n++)
