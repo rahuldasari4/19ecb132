@@ -10,3 +10,5 @@
 [binarytree.c](https://github.com/rahuldasari4/19ecb132/blob/main/binarytree.c)
 
 [calculator.c](https://github.com/rahuldasari4/19ecb132/blob/main/calculator.c)
+
+[palindrome.c](https://github.com/rahuldasari4/19ecb132/blob/main/palindrome.c)
