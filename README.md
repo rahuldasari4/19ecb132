@@ -16,3 +16,5 @@
 [pattern.c](https://github.com/rahuldasari4/19ecb132/blob/main/pattern.c)
 
 [quadraticequation.c](https://github.com/rahuldasari4/19ecb132/blob/main/quadratic%20equation.c)
+
+[sumofintegers.c](https://github.com/rahuldasari4/19ecb132/blob/main/sumofintegers.c)
