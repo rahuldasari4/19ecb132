@@ -29,3 +29,7 @@ int main() {
 
   return 0;
 }
+/*output
+Enter an operator (+, -, *, /): 5
+Enter two operands: 45
+  */
