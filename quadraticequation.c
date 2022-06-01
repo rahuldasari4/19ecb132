@@ -2,27 +2,35 @@
 #include<math.h>
 int main()
 {
-int a,b,c,r1,r2;
-printf("enter co-efficents of x*2,x,and constant in order");
-scanf("%d%d%d"&a,&b,&c);
-D=(b*b)-(4*a*c);
-if (d<0)
-printf("the roots are imaginary");
-r1=(-b+sqrt(b*b-4*a*c))/2*a;
-r2=(-b-sqrt(b*b-4*a*c))/2*a;
-printf("the roots are imaginary %d%d"r1,r2);
-else if(b*b-4*a*c>0)
-{
-	r1=(-b+sqrt(b*b-4*a*c))/2*a;
-	r2=(-b-sqrt(b*b-4*a*c))/2*a;
-	printf("the roots are real %d%d"r1;r2);
-}
-else if (b*b-4*a*c==0)
-{
-	r1=(-b+sqrt(b*b-4*a*c))/2*a;
-	r2=(-b-sqrt(b*b-4*a*c))/2*a;
-	printf("the roots are equal %d%d"r1,r2);
-}
-return 0;
-}
+   int a, b, c, d;
+   int root1, root2, realPart, imaginaryPart;
 
+   printf("Enter cofficients (a, b, and c): ");
+   scanf("%d %d %d", &a, &b, &c);
+
+   printf("The quadratic equation: %dx²%+dx%+d \n",a,b,c);
+   d = (b*b) - 4*a*c; 
+
+   if( d>1 )
+   {
+     root1 = (-b+(d)) / 2*a;
+     root2 = (-b-(d)) / 2*a;
+     printf("Roots are %d and %d\n", root1, root2);
+   }
+   else if(d==0)
+   {
+     root1 = root2 = -b/2*a;
+     printf("Roots are %d and %d\n", root1, root2);
+   }
+   else
+   {
+     realPart = -b/2*a;
+     imaginaryPart = (d)/2*a;
+     printf("root1 = %d + i(%d)\n", realPart, imaginaryPart);
+     printf("root1 = %d - i(%d)\n", realPart, imaginaryPart);
+   }
+   return 0;
+}
+/*/output
+  Enter cofficients (a, b, and c): 123
+  */
