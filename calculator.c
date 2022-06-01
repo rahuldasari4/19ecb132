@@ -1,22 +1,44 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
-{char opr;
-float n1,n2,ans;
-printf("what operation do you want to erform");
-scanf("%c",&opr);
-printf("enter two numbers"); scanf("%f %f",&ni,&n2);
-switch (opr)
-{case '+':
-ans=n1+n2;
-printf("add is %.2f",ans);
-break;
-case '-':
-ans=n1-n2;
-printf("sub is %.2f",ans);
-break;
-case '/':
-ans=n1/n2;
-printf("div is %.2f", ans);
-break;}
-return 0;
+{
+    char op;
+    float num1, num2, result=0.0f;
+
+    printf("WELCOME TO SIMPLE CALCULATOR\n");
+    printf("----------------------------\n");
+    printf("Enter [number 1] [+ - * /] [number 2]\n");
+    scanf("%f %c %f", &num1, &op, &num2);
+    switch(op)
+    {
+        case '+': 
+            result = num1 + num2;
+            break;
+
+        case '-': 
+            result = num1 - num2;
+            break;
+
+        case '*': 
+            result = num1 * num2;
+            break;
+
+        case '/': 
+            result = num1 / num2;
+            break;
+
+        default: 
+            printf("Invalid operator");
+    }
+
+    
+    printf("%.2f %c %.2f = %.2f", num1, op, num2, result);
+
+    return 0;
 }
+/*output
+WELCOME TO SIMPLE CALCULATOR
+----------------------------
+Enter [number 1] [+ - * /] [number 2]
+4 6
+  */
